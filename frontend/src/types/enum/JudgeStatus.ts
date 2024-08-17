@@ -1,0 +1,1 @@
+export type JudgeStatus = 'AC' | 'WA' | 'RE' | 'MLE' | 'TLE' | 'CE' | 'SE';

@@ -1,0 +1,16 @@
+server:
+    port: 8001
+# 需要离散化
+
+spring:
+    profiles:
+        active: dev
+    application:
+        name: judge-node
+
+judge:
+    thread-amount: 2
+    images:
+        cpp: gcc:9.5.0-bullseye
+        java: openjdk:17
+        python: python:3.13-rc-alpine3.19

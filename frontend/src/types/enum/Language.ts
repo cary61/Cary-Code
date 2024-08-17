@@ -1,0 +1,1 @@
+export type Language = 'CPP' | 'JAVA' | 'PYTHON' | '';

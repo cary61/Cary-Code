@@ -1,0 +1,15 @@
+spring:
+    cloud:
+        nacos:
+            discovery:
+                server-addr: localhost:4001
+
+judge:
+    # 本地临时文件的目录
+    local-temp-base-dir: C:/my/code/idea_project/CaryCode/judge-node/tmp/
+    # 容器内操作目录
+    container-base-dir: /home/
+
+    # 保留临时文件和容器
+#    keep-trace: true
+    keep-trace: false

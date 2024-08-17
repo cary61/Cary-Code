@@ -1,0 +1,10 @@
+server:
+  port: 5111
+
+spring:
+  thymeleaf:
+    cache: false
+
+oss:
+  base-directory: C:\my\code\idea_project\CaryCode\oss-data\
+  image-prefix: __object__/image/

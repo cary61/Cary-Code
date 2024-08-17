@@ -1,0 +1,44 @@
+server:
+    port: 6001
+
+spring:
+    profiles:
+        active: dev
+
+    application:
+      name: api
+    datasource:
+        url: jdbc:mysql://localhost:3306/cary_code_db
+        username: user
+        password: password
+        driver-class-name: com.mysql.cj.jdbc.Driver
+    servlet:
+        multipart:
+            max-file-size: 10MB
+    cloud:
+      nacos:
+        discovery:
+            server-addr: localhost:4001
+            ephemeral: false
+
+# 设置Mybatis-Plus 默认主键自增
+mybatis-plus:
+    global-config:
+        db-config:
+            id-type: auto
+
+jwt:
+    hash-key: cary61
+    validity-period-days: 7
+
+user:
+    default:
+        avatar: /image/default-avatar
+        signature: 这个人很懒，还没有设置签名╮(╯▽╰)╭
+
+problem:
+    page-size: 15
+
+
+
+

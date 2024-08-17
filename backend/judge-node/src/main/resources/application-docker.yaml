@@ -1,0 +1,12 @@
+spring:
+    cloud:
+        nacos:
+            discovery:
+                server-addr: host.docker.internal:4001
+
+judge:
+    sandbox:
+        base-dir: /usr/sandbox/
+        cpp: ${judge.template.base-dir}main.cpp
+        java: ${judge.template.base-dir}Main.java
+        python: ${judge.template.base-dir}main.py

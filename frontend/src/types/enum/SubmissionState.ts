@@ -1,0 +1,1 @@
+export type SubmissionState = 'UNATTEMPTED' | 'SOLVED' | 'ATTEMPTED' | '';

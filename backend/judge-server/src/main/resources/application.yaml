@@ -1,0 +1,27 @@
+server:
+    port: 7001
+
+spring:
+    application:
+        name: judge-server
+    datasource:
+        url: jdbc:mysql://localhost:3306/cary_code_db
+        username: user
+        password: password
+    cloud:
+        nacos:
+            discovery:
+                server-addr: localhost:4001
+                ephemeral: false
+
+# 设置Mybatis-Plus 默认主键自增
+mybatis-plus:
+    global-config:
+        db-config:
+            id-type: auto
+
+
+judge:
+    default:
+        time-interval-millis: 1000
+        available-nodes-count: 8
